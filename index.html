@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <!-- Bootstrap CSS -->
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="./src/css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero text-center text-white d-flex align-items-center justify-content-center">
+        <div class="container">
+            <h1 class="display-4">John & Jane</h1>
+            <p class="lead">We're Getting Married!</p>
+            <p class="wedding-date">July 25, 2024</p>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <img src="bride.jpg" alt="Bride" class="img-fluid rounded-circle mb-3">
+                    <h2>Jane Doe</h2>
+                    <p>A little story about the bride...</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="groom.jpg" alt="Groom" class="img-fluid rounded-circle mb-3">
+                    <h2>John Smith</h2>
+                    <p>A little story about the groom...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wedding Details Section -->
+    <section class="wedding-details py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4">Wedding Details</h2>
+            <p>The ceremony will take place at:</p>
+            <h3>Beautiful Garden Venue</h3>
+            <p>1234 Wedding Ave, Love City, LA</p>
+            <p>The reception will follow the ceremony.</p>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section class="countdown py-5 text-white text-center">
+        <div class="container">
+            <h2 class="mb-4">Countdown to Our Big Day</h2>
+            <div id="countdown-timer" class="h4"></div>
+            <!-- Add to Calendar Buttons -->
+<div class="mt-4">
+    <h4>Add to Calendar</h4>
+
+    <!-- Google Calendar Button with Font Awesome Icon -->
+    <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=John+%26+Jane+Wedding&dates=20240725T140000Z/20240725T180000Z&details=Join+us+for+our+wedding+ceremony+and+reception&location=1234+Wedding+Ave,+Love+City,+LA&sf=true&output=xml" 
+        class="btn google-btn" target="_blank">
+        <i class="fab fa-google"></i> Google Calendar
+    </a>
+
+    <!-- Outlook Calendar Button with Font Awesome Icon -->
+    <a href="https://outlook.live.com/calendar/0/deeplink/compose?path=/calendar/action/compose&subject=John+%26+Jane+Wedding&startdt=2024-07-25T14:00:00Z&enddt=2024-07-25T18:00:00Z&body=Join+us+for+our+wedding+ceremony+and+reception&location=1234+Wedding+Ave,+Love+City,+LA" 
+        class="btn outlook-btn" target="_blank">
+        <i class="fab fa-windows"></i> Outlook Calendar
+    </a>
+
+    <!-- iCalendar Button with Font Awesome Icon -->
+    <a href="/path/to/wedding.ics" download="John-and-Jane-Wedding.ics" class="btn ical-btn">
+        <i class="fas fa-calendar-alt"></i> iCalendar
+    </a>
+</div>
+
+        </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section class="rsvp py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">RSVP</h2>
+            <form action="#" method="POST" class="row g-3">
+                <div class="col-md-6">
+                    <input id="name" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6">
+                    <input id="email" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="col-md-6">
+                    <input id="plusonename" class="form-control" placeholder="Plus One's Name">
+                </div>
+                <div class="col-md-6">
+                    <input idtype="number" class="form-control" placeholder="Guests" required>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary">Submit RSVP</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer py-4 text-center">
+        <div class="container">
+            <p>&copy; 2024 John & Jane's Wedding</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./src/js/timer.js"></script>
+</body>
+</html>
