@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/header'); %>
+    <title><%= title %></title>
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        <div class="card mx-auto shadow-sm" style="max-width: 600px;">
+            <div class="card-body">
+                <h1 class="display-5 text-center">RSVP</h1>
+                <form action="/submit-rsvp" method="POST">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" name="name" id="name" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="plus-one" class="form-label">Who is your plus one?</label>
+                        <input type="text" name="plus-one" id="plus-one" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" name="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="attendance" class="form-label">Will you attend?</label>
+                        <select name="attendance" id="attendance" class="form-select" required>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Submit RSVP</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <%- include('partials/footer'); %>
+</body>
+</html>

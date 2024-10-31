@@ -1,13 +1,21 @@
 {
-	"name": "wedding-invite",
-	"version": "1.0.0",
-	"scripts": {
-	  "dev": "vite",
-	  "build": "vite build",
-	  "serve": "vite preview"
-	},
-	"devDependencies": {
-	  "vite": "^latest"
-	}
+  "name": "wedding-invite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "express-ejs-layouts": "^2.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
   }
-  
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/header'); %>
+    <title><%= title %></title>
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        <div class="card mx-auto shadow-sm" style="max-width: 600px;">
+            <div class="card-body text-center">
+                <h1 class="display-5">Wedding Details</h1>
+                <p class="lead">Dress Code: Formal Attire</p>
+                <p>Accommodations: Nearby hotels include XYZ...</p>
+
+                <!-- Add to Calendar Buttons -->
+                <h4 class="mt-4">Save the Date</h4>
+                <div class="d-flex justify-content-center gap-2">
+                    <!-- Google Calendar -->
+                    <a href="https://calendar.google.com/calendar/r/eventedit?text=John+%26+Jane's+Wedding&dates=20241201T160000/20241201T190000&details=Join+us+for+our+special+day!&location=Beautiful+Gardens,+City&sf=true"
+                       class="btn btn-outline-primary" target="_blank">Google Calendar</a>
+
+                    <!-- Outlook Calendar -->
+                    <a href="https://outlook.live.com/calendar/0/deeplink/compose?path=/calendar/action/compose&rru=addevent&subject=John+%26+Jane's+Wedding&startdt=2024-12-01T16:00:00&enddt=2024-12-01T19:00:00&location=Beautiful+Gardens,+City&body=Join+us+for+our+special+day!"
+                       class="btn btn-outline-secondary" target="_blank">Outlook Calendar</a>
+
+                    <!-- Apple Calendar -->
+                    <a href="wedding.ics"  class="btn btn-outline-success" target="_blank">Apple Calendar</a>
+                </div>
+
+                <a href="/" class="btn btn-outline-secondary mt-4">Back to Invitation</a>
+            </div>
+        </div>
+    </div>
+    <%- include('partials/footer'); %>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/header'); %>
+    <title><%= title %></title>
+</head>
+<body class="bg-light">
+
+    <div class="container py-5">
+        <h1 class="text-center display-5 mb-4">Meet the Couple</h1>
+
+        <!-- How They Met Section -->
+        <div class="text-center mb-5">
+            <h2 class="h4 text-secondary">How They Met</h2>
+            <p class="lead px-3" style="max-width: 800px; margin: auto;"><%= couple.story %></p>
+        </div>
+
+        <div class="row g-4">
+            
+            <!-- Bride Section -->
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <img src="/images/bride.jpg" class="card-img-top" alt="Bride Image">
+                    <div class="card-body">
+                        <h2 class="card-title text-primary"><%= couple.bride.name %></h2>
+                        <p class="card-text"><%= couple.bride.bio %></p>
+                        <h5>Hobbies</h5>
+                        <ul class="list-group list-group-flush">
+                            <% couple.bride.hobbies.forEach(function(hobby) { %>
+                                <li class="list-group-item"><%= hobby %></li>
+                            <% }); %>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Groom Section -->
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <img src="/images/groom.jpg" class="card-img-top" alt="Groom Image">
+                    <div class="card-body">
+                        <h2 class="card-title text-primary"><%= couple.groom.name %></h2>
+                        <p class="card-text"><%= couple.groom.bio %></p>
+                        <h5>Hobbies</h5>
+                        <ul class="list-group list-group-flush">
+                            <% couple.groom.hobbies.forEach(function(hobby) { %>
+                                <li class="list-group-item"><%= hobby %></li>
+                            <% }); %>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="text-center mt-4">
+            <a href="/" class="btn btn-outline-secondary">Back to Invitation</a>
+        </div>
+    </div>
+
+    <%- include('partials/footer'); %>
+</body>
+</html>
