@@ -21,3 +21,30 @@ footer {
     object-fit: cover;
     height: 300px;
 }
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#countdown {
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px 0;
+}
+.married-message {
+    display: none;
+    font-size: 2rem;
+    color: green;
+    text-align: center;
+    margin: 20px 0;
+}

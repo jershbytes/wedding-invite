@@ -3,6 +3,7 @@
 <head>
     <%- include('partials/header'); %>
     <title><%= title %></title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body class="bg-light">
 
@@ -13,7 +14,10 @@
                 <p class="lead">Join us for the wedding of</p>
                 <h2 class="card-text text-primary">John Doe & Jane Smith</h2>
                 <p>On December 1st, 2024, at 4:00 PM</p>
-                <p>Venue: Beautiful Gardens, City</p>
+                <!-- Countdown Timer -->
+                <div id="countdown"></div>
+                <div class="married-message" id="marriedMessage">We're Married!</div>
+                <p>Venue: Madison Square Garden, NYC</p>
                 <div class="d-flex justify-content-around">
                     <a href="/details" class="btn btn-outline-primary">Event Details</a>
                     <a href="/couple" class="btn btn-outline-info">Meet the Couple</a>
@@ -24,5 +28,8 @@
     </div>
 
     <%- include('partials/footer'); %>
+
+    <!-- Link to Countdown Script -->
+    <script src="/js/countdown.js"></script>
 </body>
 </html>
