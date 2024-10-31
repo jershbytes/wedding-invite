@@ -49,9 +49,9 @@ Lately all my friends and family are getting engaged. So I thought why not try m
 The following tools were used in this project:
 
 - [Node.js](https://nodejs.org/en/)
-- [Vite](https://vite.dev/)
+- [Express](https://expressjs.com/)
 - [Bootstrap](https://getbootstrap.com/)
-- [Nodemailer](https://nodemailer.com/)
+
 
 ## :white_check_mark: Requirements ##
 
@@ -67,12 +67,12 @@ $ git clone https://github.com/JershBytes/wedding-invite
 $ cd wedding-invite
 
 # Install dependencies
-$ pnpm install
+$ npm install
 
 # Run the project
-$ pnpm run dev
+$ npm run dev
 
-# ➜  Local:   http://localhost:5173/
+# Server is running on http://localhost:3000
 ```
 
 ## :memo: License ##
