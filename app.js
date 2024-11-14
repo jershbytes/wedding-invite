@@ -10,6 +10,10 @@ app.get('/', (req, res) => {
     res.render('index', { title: "Wedding Invitation" });
 });
 
+app.get('/registry', (req, res) => {
+    res.render('registry', { title: "Wedding Registry" });
+});
+
 app.get('/details', (req, res) => {
     res.render('details', { title: "Wedding Details" });
 });

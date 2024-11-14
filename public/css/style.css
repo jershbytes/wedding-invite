@@ -1,7 +1,13 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f0f8ff;
+}
+
+body.bg-light {
+    /* Add your styling here */
+    background-color: #ff5555; /* Light background color */
+    color: #212529; /* Text color */
+    /* You can add more styles as needed */
 }
 
 .invite {
@@ -44,7 +50,7 @@ footer {
 .married-message {
     display: none;
     font-size: 2rem;
-    color: green;
+    color: #ff5555;
     text-align: center;
     margin: 20px 0;
 }
